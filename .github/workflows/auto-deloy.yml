@@ -42,7 +42,7 @@ jobs:
         run: npm install -g surge
         
       - name: Depolying surge
-        run: surge ./build standard-app.surge.sh --token ${{ secrets.SURGE_TOKEN }} 
+        run: surge ./ standard-app.surge.sh --token ${{ secrets.SURGE_TOKEN }} 
 
 
 
